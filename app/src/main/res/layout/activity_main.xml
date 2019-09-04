@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#8b9196">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="35dp">
+
+        <ImageView
+            android:id="@+id/fotoKuring"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/fotokuring"
+            android:rotation="90"
+            app:layout_constraintLeft_toLeftOf="@id/constraint"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintRight_toLeftOf="@id/txtNama"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azriel Maulana"
+            android:textSize="21sp"
+            android:textColor="#fff"
+            app:layout_constraintLeft_toRightOf="@id/fotoKuring"
+            app:layout_constraintRight_toRightOf="@id/constraint"
+            app:layout_constraintBottom_toTopOf="@id/txtKelas"/>
+
+        <TextView
+            android:id="@+id/txtKelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XII"
+            android:textColor="#fff"
+            android:textSize="21sp"
+            app:layout_constraintLeft_toRightOf="@id/fotoKuring"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:layout_constraintRight_toRightOf="@id/constraint"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"/>
+
+        <TextView
+            android:id="@+id/txtJurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RPL 1"
+            android:textSize="21sp"
+            android:textColor="#fff"
+            app:layout_constraintLeft_toRightOf="@id/fotoKuring"
+            app:layout_constraintTop_toBottomOf="@id/txtKelas"
+            app:layout_constraintRight_toRightOf="@id/constraint"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Umum"
+            android:textColor="#262626"
+            android:layout_marginLeft="124dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint2"
+                android:layout_width="160px"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:background="#2C373F">
+
+                <TextView
+                    android:id="@+id/alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textColor="#fff"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint2"
+                    app:layout_constraintRight_toRightOf="@id/constraint2"
+                    app:layout_constraintBottom_toTopOf="@id/alamat2"/>
+
+                <TextView
+                    android:id="@+id/alamat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jl. Melong Kaler"
+                    android:textColor="#fff"
+                    app:layout_constraintRight_toRightOf="@id/constraint2"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint2"
+                    app:layout_constraintBottom_toBottomOf="@id/constraint2"
+                    app:layout_constraintTop_toTopOf="@id/constraint2"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint3"
+                android:layout_width="160px"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:background="#3F4950">
+
+                <TextView
+                    android:id="@+id/goldar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="Golongan Darah"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint3"
+                    app:layout_constraintRight_toRightOf="@id/constraint3"
+                    app:layout_constraintBottom_toTopOf="@id/goldar2"/>
+
+                <TextView
+                    android:id="@+id/goldar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="O"
+                    app:layout_constraintTop_toTopOf="@id/constraint3"
+                    app:layout_constraintRight_toRightOf="@id/constraint3"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint3"
+                    app:layout_constraintBottom_toBottomOf="@id/constraint3"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint4"
+                android:layout_width="160px"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:background="#656D73">
+
+                <TextView
+                    android:id="@+id/hobi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hobi"
+                    android:textColor="#fff"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint4"
+                    app:layout_constraintRight_toRightOf="@id/constraint4"
+                    app:layout_constraintBottom_toTopOf="@id/hobi2"/>
+
+                <TextView
+                    android:id="@+id/hobi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mendengarkan Musik"
+                    android:textColor="#fff"
+                    app:layout_constraintTop_toTopOf="@id/constraint4"
+                    android:textSize="10sp"
+                    app:layout_constraintRight_toRightOf="@id/constraint4"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint4"
+                    app:layout_constraintBottom_toBottomOf="@id/constraint4"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre Musik Favorit"
+            android:textColor="#262626"
+            android:layout_marginLeft="100dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint5"
+                android:layout_width="160px"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:background="#656D73">
+
+                <TextView
+                    android:id="@+id/ballad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ballad"
+                    android:textColor="#fff"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint5"
+                    app:layout_constraintRight_toRightOf="@id/constraint5"
+                    app:layout_constraintTop_toTopOf="@id/constraint5"
+                    app:layout_constraintBottom_toTopOf="@id/imgBallad"
+                    android:layout_marginTop="35dp"/>
+
+                <ImageView
+                    android:id="@+id/imgBallad"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/ballad"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint6"
+                android:layout_width="160px"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:background="#3F4950">
+
+                <TextView
+                    android:id="@+id/rock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rock"
+                    android:textColor="#fff"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint6"
+                    app:layout_constraintRight_toRightOf="@id/constraint6"
+                    app:layout_constraintTop_toTopOf="@id/constraint6"
+                    android:layout_marginTop="35dp"
+                    app:layout_constraintBottom_toTopOf="@id/imgRock"/>
+
+                <ImageView
+                    android:id="@+id/imgRock"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/rock"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint7"
+                android:layout_width="160px"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:background="#2C373F">
+
+                <TextView
+                    android:id="@+id/metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metal"
+                    android:textColor="#fff"
+                    app:layout_constraintLeft_toLeftOf="@id/constraint7"
+                    app:layout_constraintRight_toRightOf="@id/constraint7"
+                    app:layout_constraintTop_toTopOf="@id/constraint7"
+                    app:layout_constraintBottom_toTopOf="@id/imgMetal"
+                    android:layout_marginTop="35dp"/>
+
+                <ImageView
+                    android:id="@+id/imgMetal"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/metal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="35dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
